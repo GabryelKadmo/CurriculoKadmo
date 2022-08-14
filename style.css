@@ -1,0 +1,168 @@
+* {
+  margin: auto;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  padding: 0%;
+  overflow: auto;
+  max-width: 100%;
+}
+
+/* Video  */
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url("assets/images/ok.mp4") no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+.stopfade {
+  opacity: 0.5;
+}
+
+/* Main  */
+
+.kadmo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.perfil {
+  border-radius: 100%;
+  max-width: 200px;
+  border: 1px solid black;
+}
+
+.icon a {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  margin: 12px;
+  border-radius: 50%;
+  transition: 0.5s;
+  font-size: 85px;
+  text-decoration: none;
+}
+
+.icon {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50);
+}
+
+.inf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info {
+  background-color: aliceblue;
+  max-width: 23em;
+  min-width: 23em;
+  max-height: 15em;
+  min-height: 15em;
+  border-radius: 10px;
+  margin: 40px;
+  padding: 24px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.info h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.info li {
+  margin: auto;
+  padding: 2px;
+}
+
+/* Footer  */
+
+.footer {
+  color: rgb(255, 255, 255);
+  padding: 3em;
+  text-align: center;
+  position: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  padding-top: 12px;
+}
+
+.copy_right span {
+  font-weight: bold;
+  color: #062168;
+}
+
+.social_list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.social_list li {
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+.social_list li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.social_list li a:hover {
+  color: #062168;
+}
+
+.social_list svg {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* Scrollbar  */
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #413f3f #1d1e21;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1d1e21;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #413f3f;
+  border-radius: 10px;
+  border: 3px none #ffffff;
+}
